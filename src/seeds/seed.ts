@@ -14,7 +14,7 @@ async function bootstrap() {
       apellidos: 'Principal',
       dni: '9999999999',
       email: 'admin@example.com',
-      password: 'Admin12345',
+      password: process.env.DEFAULT_ADMIN_PASSWORD!,
       role: UserRole.OPERADOR,
     });
     console.log('Operador inicial creado');
